@@ -1,0 +1,29 @@
+<div class="w3-container" ng-controller="editUserController" ng-if="dataReady">
+    <form novalidate>
+      <h3>Edit User: {{id}}</h3>
+        <label>First Name <span class="item_required">*</span></label>
+        <input class="w3-input w3-border" type="text" ng-model="user.fName" placeholder="First Name" required>
+      <br>
+        <label>Last Name <span class="item_required">*</span></label>
+        <input class="w3-input w3-border" type="text" ng-model="user.lName" placeholder="Last Name" required>
+      <br>
+      <label>Title</label>
+        <input class="w3-input w3-border" type="text" ng-model="user.title" placeholder="Title">
+      <br>
+        <label>Gender</label>
+        <input class="w3-input w3-border" type="text" ng-model="user.gender" placeholder="Gender">
+      <br>
+      <label>Age <span class="item_required">*</span></label>
+        <input class="w3-input w3-border" type="number" ng-model="user.age" placeholder="Age">
+      <br>
+        <label>Password <span class="item_required">*</span></label>
+        <input class="w3-input w3-border" type="password" ng-model="passw1" placeholder="Password" required>
+      <br>
+        <label>Repeat <span class="item_required">*</span></label>
+        <input class="w3-input w3-border" type="password" ng-model="passw2" placeholder="Repeat Password" required>
+        <span ng-show="error" class="item_required">password not match</span>
+      <br>
+      <button class="w3-btn w3-green w3-ripple" ng-disabled="error || incomplete" ng-click="editUser($event)">&#10004; Save Changes</button>
+      <button class="w3-btn w3-green w3-ripple" ng-click="cancel($event)">&#10064; Cancel</button>
+    </form>
+</div>

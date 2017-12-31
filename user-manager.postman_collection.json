@@ -1,0 +1,165 @@
+{
+	"variables": [],
+	"info": {
+		"name": "user-manager",
+		"_postman_id": "b48367f0-b68f-5c1c-43df-9344f511081b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"url": "http://localhost:8888/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fName",
+							"value": "li_9",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lName",
+							"value": "zhong",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update user by Id",
+			"request": {
+				"url": "http://localhost:8888/users/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fName",
+							"value": "Salsa-3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Principle",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by Id",
+			"request": {
+				"url": "http://localhost:8888/users/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create new user",
+			"request": {
+				"url": "http://localhost:8888/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fName",
+							"value": "Lisa",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lName",
+							"value": "Li",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by Id",
+			"request": {
+				"url": "http://localhost:8888/users/11",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

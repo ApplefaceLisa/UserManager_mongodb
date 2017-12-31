@@ -1,0 +1,20 @@
+{
+  "name": "hw4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hw-4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-utils-pagination": "^0.11.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.0-rc0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.5"
+  }
+}
