@@ -49,7 +49,13 @@ To create an expressJS application that:
 
 
 # Mongodb / Mongoose
-- online mongodb database mlab.com
+## Homework 5
+This homework is to enhance this app in the following way:
+To create an expressJS application that
+1. use a database table in mySQL or a collection in MongoDB to store user information,
+2. an expressJS model layer (User) to implement all database calls via mysql or mongoose
+
+## online mongodb database mlab.com
 
 # Others
 - client side : angularJS
